@@ -86,7 +86,7 @@ body {
   background: url(background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  filter: blur(1px);
+  filter: blur(10px);
 }
 .container {
   position: absolute;
@@ -94,11 +94,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
-  height: 550px;
+  height: 600px;
   background: url(background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 20px;
 }
 .container .content {
@@ -141,9 +141,23 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: calc(100% - 58%);
+  width: calc(100% - 65%);
   height: 100%;
   overflow: hidden;
+}
+.label {
+  position: absolute;
+  top: 2%;
+  left: 2px;
+  user-select: none;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+.input:not(:placeholder-shown) + .label {
+  top: -5px;
+  left: -58x;
+  padding: 0px;
+  display: inline-block;
 }
 .logreg-box .form-box {
   position: absolute;
@@ -165,11 +179,11 @@ body {
 }
 
 .logreg-box.active .form-box.login {
-  transform: translateX(430px);
+  transform: translateX(500px);
   transition-delay: 0s;
 }
 .logreg-box .form-box.register {
-  transform: translateX(430px);
+  transform: translateX(500px);
   transition: transform 0.6s ease;
   transition-delay: 0s;
 }
@@ -208,17 +222,17 @@ body {
   font-size: 16px;
   font-weight: 500;
   pointer-events: none;
-  transform: 0.5s ease;
-}
-.input-box .icon {
-  position: absolute;
-  right: 0;
-  top: 13px;
-  font-size: 19px;
+  transition: 0.5s ease;
 }
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
   top: -5px;
+}
+.input-box .icon {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  font-size: 19px;
 }
 .form-box .remember-forgot {
   font-size: 14.5px;
