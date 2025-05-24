@@ -31,6 +31,13 @@ body {
   left: 11px;
   padding: 10px;
   display: inline-block;
-  background-color: white;
-  color: #6a5af9;
+  background-color: rgb(255, 255, 255);
+  color: #1b03f8;
+}
+div {
+  width: 30%;
+  display: inline-block;
+}
+div nav a {
+  color: #168f3a;
 }

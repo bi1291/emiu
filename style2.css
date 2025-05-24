@@ -42,3 +42,7 @@ body {
     filter: hue-rotate(360deg);
   }
 }
+div a {
+  width: 30%;
+  display: inline-block;
+}

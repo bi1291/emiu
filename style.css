@@ -37,3 +37,7 @@ button {
 button:hover {
   background: #666;
 }
+div a {
+  width: 30%;
+  display: inline-block;
+}

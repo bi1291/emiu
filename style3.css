@@ -150,3 +150,7 @@ input:focus + .pass {
   background-color: white;
   color: #bb2121;
 }
+div v {
+  width: 30%;
+  display: inline-block;
+}
